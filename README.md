@@ -1,4 +1,5 @@
 # SpacexEx
+For SpaceX API documentation [https://docs.spacexdata.com/?version=latest](https://docs.spacexdata.com/?version=latest)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
