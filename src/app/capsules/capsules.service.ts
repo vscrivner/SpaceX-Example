@@ -14,4 +14,8 @@ export class CapsulesService {
   getCapsules(): Observable<ICapsule[]> {
     return this.http.get<ICapsule[]>('https://api.spacexdata.com/v3/capsules');
   }
+
+  getCapsule(capsuleSerial): Observable<ICapsule> {
+    return this.http.get<ICapsule>('https://api.spacexdata.com/v3/capsules/' + capsuleSerial);
+  }
 }
