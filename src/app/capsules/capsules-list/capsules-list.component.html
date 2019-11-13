@@ -1,5 +1,7 @@
 <h1>Capsules</h1>
 
+<ng-container *ngIf="loading">Loading...</ng-container>
+<ng-container *ngIf="!loading">
 <table>
   <thead>
     <tr>
@@ -21,4 +23,16 @@
       <td></td>
     </tr>
   </tbody>
+<<<<<<< Updated upstream
 </table>
+=======
+</table>
+</ng-container>
+
+<nz-modal [(nzVisible)]="isVisible" nzTitle="{{modalTitle}}" [nzFooter]="modalFooter" (nzOnCancel)="handleCancel()">
+  <app-capsule-details [selectedCapsule]="selectedCapsule"></app-capsule-details>
+  <ng-template #modalFooter>
+    <button nz-button nzType="default" (click)="handleCancel()">Close</button>
+  </ng-template>
+</nz-modal>
+>>>>>>> Stashed changes

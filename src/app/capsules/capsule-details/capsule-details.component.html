@@ -1,1 +1,13 @@
+<<<<<<< Updated upstream
 <p>capsule-details works!</p>
+=======
+<p>Serial: {{selectedCapsule.capsule_serial}}</p>
+<p>Status: {{selectedCapsule.status}}</p>
+<p>Number of Landings: {{selectedCapsule.landings}}</p>
+<p>Missions:</p>
+<ul>
+  <li *ngFor="let mission of selectedCapsule.missions">Mission Name - {{mission.name}}; Flight - {{mission.flight}}</li>
+</ul>
+<p>Type: {{selectedCapsule.type}}</p>
+<p>Details: {{selectedCapsule.details}}</p>
+>>>>>>> Stashed changes

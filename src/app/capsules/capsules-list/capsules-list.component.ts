@@ -22,7 +22,6 @@ export class CapsulesListComponent implements OnInit {
   private getCapsulesList() {
     this.capsulesService.getCapsules().subscribe(data => {
       this.capsulesList = data;
-      console.log(this.capsulesList);
       this.loading = false;
     });
   }
